@@ -1,0 +1,101 @@
+
+/*----------- travels -------------*/
+
+.travels {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-end;
+    background: #FFF9F9;
+    .travels-hero {
+      margin-top: -132px;
+      margin-bottom: -3px;
+    }
+    .travels-item {
+      max-width: 820px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .section-heading {
+        position: relative;
+        padding-right: 140px;
+        padding-bottom: 60px;
+        font-size: 85px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #202B46;
+        font-family: "Italiana", serif;
+        img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+      h4 {
+        font-family: "prompt", serif;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.8em;
+        color: #727272;
+      }
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+  .travels {
+    gap: 20px;
+    .travels-item {
+      max-width: 540px;
+      .section-heading {
+        padding-bottom: 30px;
+        font-size: 54px;
+        padding-right: 110px;
+        img {
+          width: 80px;
+        }
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .travels-hero {
+      margin-top: -70px;
+      margin-bottom: -2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .travels {
+    .travels-hero {
+      margin-top: -48px;
+      margin-bottom: -2px;
+    }
+    .travels-item {
+      max-width: 396px;
+      padding-left: 20px;
+      .section-heading {
+        padding-bottom: 30px;
+        font-size: 40px;
+        padding-right: 80px;
+        img {
+          width: 60px;
+        }
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  .travels {
+    gap: 40px;
+    flex-wrap: wrap;
+    .travels-item {
+      max-width: 100%;
+      padding: 40px;
+    }
+  }
+}
+  

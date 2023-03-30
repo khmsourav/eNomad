@@ -1,0 +1,112 @@
+/*----------- adventures -------------*/
+
+.adventures {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: #FFF9F9;
+    .adventures-hero {
+      margin-top: -45px;
+      margin-bottom: -5px;
+    }
+    .adventures-item {
+      max-width: 700px;
+      .section-heading{
+        font-size: 85px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #202B46;
+        font-family: 'Italiana', serif;
+        padding-bottom: 70px;
+      }
+      .adventures-item-list li {
+        position: relative;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 300;
+        color: #666D84;
+        font-size: 30px;
+        line-height: 1.6em;
+        padding: 22px 0 22px 35px;
+        border-style: dashed;
+        border-width: 0 0 1px;
+        border-color: #9CA8C3;
+      }
+      .adventures-item-list li:before {
+        position: absolute;
+        content: '';
+        top: 40px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background: #FF681A;
+        border-radius: 100%;
+      }
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+  .adventures {
+    gap: 30px;
+    .adventures-item {
+      max-width: 390px;
+      padding-right: 20px;
+      .section-heading {
+        font-size: 50px;
+        padding-bottom: 30px;
+      }
+      .adventures-item-list li {
+        font-size: 20px;
+        line-height: 1.5em;
+        padding: 14px 0 15px 20px;
+      }
+      .adventures-item-list li:before {
+        top: 25px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    .adventures-hero {
+      margin-top: -27px;
+      margin-bottom: -3px;
+  }
+  }  
+}
+
+@media only screen and (max-width: 768px) {
+  .adventures {
+    gap: 20px;
+    .adventures-hero {
+      margin-top: -18px;
+      margin-bottom: -3px;
+      img {
+        max-width: 370px;
+      } 
+    }
+    .adventures-item {
+      max-width: 300px;
+      .adventures-item-list li:before {
+        top: 18px;
+      }
+      .section-heading {
+        font-size: 40px;
+        padding-bottom: 20px;
+      }
+      .adventures-item-list li {
+        font-size: 16px;
+        padding: 12px 0 12px 20px;
+      }
+    }
+  }
+  
+}
+@media only screen and (max-width: 520px) {
+  .adventures {
+    gap: 30px;
+    flex-wrap: wrap;
+    .adventures-item {
+      max-width: 100%;
+      padding: 0 30px 50px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+
+/*----------- storiesForm -------------*/
+
+.storiesForm {
+    padding: 200px 0 100px;
+    .storiesForm-item-wrapper {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 0 -20px;
+      row-gap: 40px;
+      .storiesForm-item {
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    img {
+      border-radius: 10px;
+    }
+    p {
+      font-family: 'Italiana', serif;
+      font-size: 35px;
+      line-height: 1.2em;
+      padding-top: 20px;
+      color: #202B46;
+    }
+    .storiesForm-btn {
+      margin: 200px 0 0 80px;
+      background: transparent;
+      border: 2px dashed #202B46;
+      padding: 26px 55px;
+      color: #202B46;
+      line-height: 1.2em;
+      font-size: 35px;
+      font-family: 'prompt', serif;
+      font-weight: 300;
+      border-radius: 10px;
+      transition: ease-in-out .25s;
+      transform: scale(1);
+      cursor: pointer;
+    }
+    .storiesForm-btn:hover {
+      border: 2px dashed #FF681A;
+      color: #FF681A;
+      transform: scale(1.1);
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+  .storiesForm {
+    padding: 100px 0 50px;
+    .storiesForm-item-wrapper {
+      row-gap: 30px;
+    }
+    .storiesForm-item-wrapper:nth-child(2) {
+      margin-bottom: 40px;
+    }
+    p {
+      font-family: "Italiana", serif;
+      font-size: 25px;
+      padding-top: 10px;
+    }
+    .storiesForm-btn {
+      margin: 125px 0 0 40px;
+      padding: 20px 30px;
+      font-size: 22px;
+    }
+  }
+   
+}
+
+@media only screen and (max-width: 768px) {
+  .storiesForm {
+    .storiesForm-btn {
+      margin: 88px 0 0 20px;
+      padding: 16px 26px;
+      font-size: 18px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  .storiesForm {
+    .storiesForm-item-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      .storiesForm-item {
+        flex-basis: 100%;
+        padding: 0 10px;
+        img {
+          width: 100%;
+        }
+        p {
+          font-size: 16px;
+        }
+        .storiesForm-btn {
+          margin: 58px 0 0 10px;
+          padding: 12px 25px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+  

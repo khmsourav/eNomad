@@ -1,0 +1,105 @@
+/*----------- contact -------------*/
+
+::placeholder {
+    color: #727272;
+}
+.contact {
+    padding-bottom: 200px;
+    .contact-item-wrapper {
+        width: 850px;
+        margin: 0 auto;
+        span {
+            padding-bottom: 20px;
+            display: block;
+            width: 100%;
+            input {
+                width: 100%;
+                height: 80px;
+                padding: 0 30px;
+                outline: 0;
+                font-family: "Prompt", serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #202B46;
+                background: #FFA183;
+                border: none;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+            textarea {
+                width: 100%;
+                padding: 30px;
+                outline: 0;
+                height: 250px;
+                font-family: "Prompt", serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #202B46;
+                background: #FFA183;
+                border: none;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+            button {
+                width: 100%;
+                padding: 25px 50px;
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                margin-top: 20px;
+                background: rgb(255, 102, 26, .8);
+                font-family: "Prompt", serif;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 100px;
+        .contact-item-wrapper {
+            width: 650px;
+            li {
+                input {
+                    height: 65px;
+                    padding: 0 20px;
+                    font-size: 16px;
+                }
+                textarea {
+                    height: 200px;
+                    padding: 20px;
+                    font-size: 16px;
+                }
+                button {
+                    padding: 20px 50px;
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding-bottom: 70px;
+        .contact-item-wrapper {
+            width: 550px;
+        }
+    }
+}
+@media only screen and (max-width: 520px) {
+    .contact {
+        padding-bottom: 100px;
+        .contact-item-wrapper {
+            width: 350px;
+        }
+    }
+}
+
+
+
